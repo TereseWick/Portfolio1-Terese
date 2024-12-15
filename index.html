@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio1</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#about" class="nav-link" onclick="openPopup('<h2>Hi!</h2><p>I am Terese, 42 years from Norway.Student at Noroff on the first year of web development.</p>')">About me!</a>
+            <a href="#contact" class="nav-link" onclick="openPopup('<h2>Feel free to contact me:</h2><p>Email: terwick02195@stud.noroff.no</p> ')">Contact me!</a>
+        </nav>
+
+        </header>
+
+         <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick ="closePopup()">&times;</span>
+                <div id="popup-text"></div>
+            </div>
+        </div>
+
+        <main>
+
+        <section class="banner_container">
+          <div class="banner">
+            <h1>Hello</h1>
+            <img src="images/Me.jpeg" alt="Picture of me and my dog" class="banner_image" />
+          </div>
+
+          <div class="content-below-banner">
+          <div class="text-content">
+            <p>
+                I am  Terese and i want to be a frontend-develpoer.
+                On this page i will share some of my work so far.
+            </p>
+          </div>
+          </div>
+        </section>
+    
+            
+            <div class="card-container">
+
+            <div class="card">
+                <img src="images/Rainyday.png" alt="Rainyday front page" class="card-image"/>
+                <div class="card-content">
+                    <h2 class="card-title">Rainydays</h2>
+                    <p class="card-description">This is a cross-course project.Started with my first design, HTML, CSS and JavaScript.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+
+                <div class="card">
+                    <img src="images/Skien Science.png" alt="Skien science museum front page" class="card-image"/>
+                    <div class="card-content">
+                        <h2 class="card-title">Skien science museum</h2>
+                        <p class="card-description">My first semester project. It was initially built up with HTML and CSS.But has subsequently improved it a bit, and made it more responsive.</p>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </div>
+
+                    <div class="card">
+                        <img src="images/The team.png" alt="The team blog front page" class="card-image"/>
+                        <div class="card-content">
+                            <h2 class="card-title">Blog-The Team</h2>
+                            <p class="card-description">Here is my first project exam. Need some improvements and didn't get to all the functions before submission.</p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+           
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
